@@ -3,9 +3,14 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     display: flex;
     flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color:white;
 }
 .header1 {
     display: flex;
@@ -34,7 +39,7 @@ body{
 .arrow{
     position: absolute;
     top:38px;
-    left:410px;
+    left:430px;
 }
 .menu {
 
@@ -56,6 +61,17 @@ nav ul {
     color: white;
     height: 22px;
     opacity: 1;
+    
+}
+.navbar li{
+    font-family: 'Krub',sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16px;
+
+line-height: 135%;
+letter-spacing: 0%;
+
 }
 .buttonbg {
   /* width: 194px;
@@ -129,10 +145,7 @@ nav ul {
 
   }
 .arrow{
-    position: absolute;
-    top:22px;
-    left:170px;
-}
+    display: none;
    
 }
 /* about common styles */
@@ -161,7 +174,7 @@ font-size: 16px;
 
 line-height: 152%;
 letter-spacing: 0%;
-color:rgba(102, 108, 137, 1);
+color:rgba(102, 108, 137, 1);}
 
 
 }
