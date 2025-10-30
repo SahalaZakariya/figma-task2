@@ -369,7 +369,7 @@ position: relative;
   height: 400px;
   background: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
   z-index: -1; /* goes behind content */
-  margin-top: 0; /* remove this */
+  margin-top: 0; 
 }
 
 
