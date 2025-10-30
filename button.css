@@ -1,0 +1,64 @@
+.pattern-button {
+  position: relative;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+ background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+
+overflow: hidden;
+ border: none;
+  
+}
+.banner-text .pattern-button{
+  color: black;
+}
+/* The quarter-circle pattern */
+.pattern-button .pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;         
+  height: 30px;
+  background: white;
+  border-top-left-radius: 100%;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect - scale pattern */
+.pattern-button:hover .pattern {
+  transform: scale(3);  /* adjust to make it half the button size */
+}
+.bluebutton{
+    position:relative;
+    background-color:rgba(9, 18, 66, 1);
+    padding:16px 40px;
+    overflow: hidden;
+    font-size: 16px;
+  font-weight: 600;
+  border: none;
+  color:white;
+ 
+
+}
+.bluebutton .bluepattern{
+    background:rgba(31, 42, 105, 1);
+    height:30px ;
+    width:30px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border-top-left-radius: 100%;
+    transform-origin: bottom right;
+    transition:transform  0.3s ease;
+}
+
+.bluebutton:hover .bluepattern{
+    transform:scale(3);
+}
+.faqcontact .pattern-button{
+  width: 142px;
+  height: 60px;
+  color: black;
+}

@@ -1,0 +1,175 @@
+
+.banner {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: 
+    linear-gradient(90.93deg, #032D5F 18.18%, rgba(9, 18, 66, 0.2) 64.92%),
+    url('./images/aboutbg.png');
+
+}
+.subtext p,.pricingsubtext p{
+    color:white;
+    border-left: 3px solid  #FFB629;
+    background-color: rgba(232, 232, 232, 0.5);
+    white-space: nowrap;
+    display: inline-block;
+
+
+}
+.maintext p{
+font-family: 'Rubik',sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 60px;
+color: white;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.banner-text{
+    z-index: 1000;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+.abouttext{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+     padding:20px 50px 20px 30px;
+     box-sizing: border-box;
+}
+.about-about{
+   padding: 100px 80px 20px 80px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.buttongroup{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.yellowbuttonblack,.yellowbuttonwhite{
+    width:192px;
+    height:60px;
+    background: rgba(244, 244, 244, 1);
+    border:none;
+    color:black;
+;
+}
+.yellowbuttonwhite{
+    color: white;
+     background-color:  rgba(255, 184, 43, 1);
+}
+.content p{
+ font-family: 'Krub',sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+color: rgba(102, 108, 137, 1);
+
+line-height: 152%;
+letter-spacing: 0%;
+
+}
+/* services section */
+.about-services{
+    background: rgba(244, 244, 244, 1);
+    padding: 10px 10px 10px 10px;
+
+
+
+}
+.aboutservicescontent{
+    padding: 20px 250px 100px 250px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.titlemaintext p{
+   font-family: 'Rubik',sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 35px;
+color:black;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:60px;
+}
+.s1{
+    display: flex;
+    flex-direction: column;
+}
+.s1 p{
+    font-family: 'Rubik',sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 25px;
+color: rgba(28, 31, 53, 1);
+
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.servicelabel p{
+ font-family: 'Krub',sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+color:rgba(102, 108, 137, 1);
+line-height: 152%;
+letter-spacing: 0%;
+
+}
+
+@media(max-width:768px){
+    .service-grid{
+         grid-template-columns: 1fr ;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* testimonial section */
+.abouttestimonial{
+    background-color: rgba(244, 244, 244, 1);
+    width: 100%;
+    height:auto;
+     margin:0px;
+     display: flex;
+     flex-direction: column;
+     gap:100px;
+     
+}
+
+.title-subtext{
+     
+      background-color:rgba(232, 232, 232, 0.5);
+      display: inline-block;
+}
+

@@ -1,0 +1,51 @@
+
+.banner {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: 
+    linear-gradient(90.93deg, #032D5F 18.18%, rgba(9, 18, 66, 0.2) 64.92%),
+    url('./images/pricingbg.png');
+
+}
+.subtext p,.pricingsubtext p{
+    color:white;
+    border-left: 3px solid  #FFB629;
+    background-color: rgba(232, 232, 232, 0.5);
+    white-space: nowrap;
+    display: inline-block;
+
+
+
+}
+.maintext p{
+font-family: 'Rubik',sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 60px;
+color: white;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.banner-text{
+    position: absolute;
+    left:200px;
+
+}
+
+/* testimonial section */
+.abouttestimonial{
+    background-color: rgba(244, 244, 244, 1);
+    width: 100%;
+    height:auto;
+     margin:0px;
+     display: flex;
+     flex-direction: column;
+     gap:100px;
+     
+}
