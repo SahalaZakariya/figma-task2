@@ -11,13 +11,21 @@
     url('./images/aboutbg.png');
 
 }
-.subtext p,.pricingsubtext p{
+.pricingsubtext p{
     color:white;
     border-left: 3px solid  #FFB629;
     background-color: rgba(232, 232, 232, 0.5);
     white-space: nowrap;
     display: inline-block;
 
+
+}
+.faqtext .whyusbox p,.abouttext .whyusbox p,.subtext p{
+     color:black;
+    border-left: 3px solid  #FFB629;
+    background-color: rgba(232, 232, 232, 0.5);
+    white-space: nowrap;
+    display: inline-block;
 
 }
 .maintext p{
@@ -28,6 +36,17 @@ font-size: 60px;
 color: white;
 line-height: 100%;
 letter-spacing: 0%;
+}
+ .faqtext .aboutheading p,.abouttext .aboutheading p{
+font-family: 'Rubik',sans-serif;
+font-weight: 600;
+font-style: Bold;
+font-size: 35px;
+color: black;
+line-height: 100%;
+letter-spacing: 0%;
+width: 308px;
+
 }
 .banner-text{
     z-index: 1000;
@@ -57,8 +76,9 @@ letter-spacing: 0%;
     gap:10px;
 }
 .yellowbuttonblack,.yellowbuttonwhite{
-    width:192px;
-    height:60px;
+    width:auto;
+    padding:10px 10px 10px 10px;
+    height:50px;
     background: rgba(244, 244, 244, 1);
     border:none;
     color:black;
@@ -94,15 +114,16 @@ letter-spacing: 0%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:30px;
+        gap:60px;
+        text-align: center;
 }
-.title{
+/* .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:20px;
-}
+} */
 .titlemaintext p{
    font-family: 'Rubik',sans-serif;
 font-weight: 600;
@@ -144,16 +165,7 @@ letter-spacing: 0%;
 
 }
 
-@media(max-width:768px){
-    .service-grid{
-         grid-template-columns: 1fr ;
-    }
-    .about{
-        display: flex;
-        flex-direction: column;
-    }
 
-}
 
 /* testimonial section */
 .abouttestimonial{
@@ -173,3 +185,151 @@ letter-spacing: 0%;
       display: inline-block;
 }
 
+.aboutbody .user1{
+    padding:10px 100px 100px 100px;
+    box-sizing: border-box;
+}
+.aboutbody .user2{
+    background-color: rgba(244, 244, 244, 1);
+     padding:10px 100px 100px 20px;
+     box-sizing: border-box;
+
+}
+.aboutbody .user2 .review{
+    background-color: rgba(9, 18, 66, 1);
+    gap:5px;
+   
+
+}
+.aboutbody .user1 .review{
+    
+    gap:5px;
+   
+
+}
+
+.aboutbody .title{
+   
+    padding-left:100px;
+    padding-top:100px;
+    
+    box-sizing: border-box;
+   
+}
+.aboutservicescontent .title{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.aboutbody .title-subtext{
+     text-align: center;
+      background-color:rgba(232, 232, 232, 0.5);
+      display: inline-block;
+}
+.aboutbody .title-subtext p{
+font-family: 'Rubik',sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+border-left: 3px solid #FFB629;
+text-align: left;
+}
+.aboutbody .title-heading p{
+height: 41px;
+opacity: 1;
+font-family: 'Rubik',sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 35px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(28, 31, 53, 1);
+}
+.aboutbody .testimonial-title{
+   display: flex;
+  flex-direction: row;
+gap:800px;
+
+   
+}
+.aboutbody .testimonial-icon{
+    display: flex;
+    justify-content: end; 
+   
+}
+.aboutbody .about{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+.clientimage img,.copyright{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media(max-width:1439px){
+
+
+  .aboutbody .user {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    overflow-x: hidden;
+    max-width:100%;
+   
+  }
+
+  .aboutbody .user1,.aboutbody .user2 {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .aboutbody .smithreview {
+    text-align: justify;
+  }
+  .aboutbody .testimonial-title {
+   display: none;
+  }
+}
+@media(max-width:930px){
+    .aboutimage{
+        display: none;
+    }
+    
+}
+@media(max-width:768px){
+    .service-grid{
+         grid-template-columns: 1fr ;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media(max-width:500px){
+    .aboutservicescontent{
+    padding: 0px 0px 0px 0px;    
+    }
+    .aboutbody .banner .banner-text{
+        position:static;
+        /* display: none; */
+    }
+}
+
+@media(max-width:500px){
+    .aboutservicescontent{
+    padding: 0px 0px 0px 0px;
+      
+      
+}
+}
+@media (max-width: 395px) {
+  .navbar {
+    display: none;
+  }
+}

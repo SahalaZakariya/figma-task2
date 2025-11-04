@@ -37,7 +37,71 @@ letter-spacing: 0%;
     left:200px;
 
 }
+.pricingbody .user1{
+    padding:10px 100px 100px 100px;
+    box-sizing: border-box;
+}
+.pricingbody .user2{
+    background-color: rgba(244, 244, 244, 1);
+     padding:10px 100px 100px 20px;
+     box-sizing: border-box;
 
+}
+.pricingbody .user2 .review{
+    background-color: rgba(9, 18, 66, 1);
+    gap:5px;
+   
+
+}
+.pricingbody .user1 .review{
+    
+    gap:5px;
+   
+
+}
+
+.pricingbody .title{
+   
+    padding-left:140px;
+    padding-top:100px;
+    box-sizing: border-box;
+}
+.pricingbody .title-subtext{
+     
+      background-color:rgba(232, 232, 232, 0.5);
+      display: inline-block;
+}
+.pricingbody .title-subtext p{
+font-family: 'Rubik',sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+border-left: 3px solid #FFB629;
+}
+.pricingbody .title-heading p{
+height: 41px;
+opacity: 1;
+font-family: 'Rubik',sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 35px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(28, 31, 53, 1);
+}
+.pricingbody .testimonial-title{
+   display: flex;
+  flex-direction: row;
+gap:780px;
+   
+}
+.pricingbody .testimonial-icon{
+    display: flex;
+    justify-content: end; 
+   
+}
 /* testimonial section */
 .abouttestimonial{
     background-color: rgba(244, 244, 244, 1);
@@ -48,4 +112,134 @@ letter-spacing: 0%;
      flex-direction: column;
      gap:100px;
      
+}
+.pricingbody .copyright{
+   max-width:100%;
+  overflow-x: hidden;
+}
+@media (max-width: 395px) {
+  .navbar {
+    display: none;
+  }
+}
+/* @media (max-width: 500px) {
+  .pricingbody .copyright {
+    display: none;
+  }
+} */
+/* .pricingbody .pricing,.pricingbody .user{
+    overflow-x: hidden;
+    
+} */
+@media(max-width:425px){
+       html,body{
+    overflow-x: hidden; 
+    width: 100%;
+}
+}
+@media(max-width:1439px){
+
+
+  .pricingbody .user {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    overflow-x: hidden;
+    max-width:100%;
+   
+  }
+
+  .pricingbody .user1,.pricingbody .user2 {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .pricingbody .smithreview {
+    text-align: justify;
+  }
+  .pricingbody .testimonial-title {
+   display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .title {
+    padding: 60px 40px 0 40px;
+    text-align: center;
+  }
+
+  
+
+  .title-heading p {
+    font-size: 28px;
+  }
+
+  .user {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .user1, .user2 {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .reviewcontent p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .abouttestimonial {
+    gap: 50px;
+    padding: 0 0px;
+  }
+
+  .title {
+    padding: 40px 10px 0 10px;
+    text-align: center;
+  }
+
+  .testimonial-title {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title-heading p {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .user {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .user1, .user2 {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .reviewcontent p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .smith object,
+  .testicon object {
+    width: 60px;
+    height: 60px;
+  }
 }

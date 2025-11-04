@@ -266,16 +266,58 @@ line-height: 125%;
 letter-spacing: 0%;
 
 }
+.blogfooter .copyright{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 395px) {
+  .navbar {
+    display: none;
+  }
+  .banner .maintext p{
+    display: none;
+  }
+  .subtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  
+  
+  }
+}
+
 @media(max-width:768px){
     .blogcontent{
         flex-direction: column;
-       
+         padding:0px 0px;
+        width: 100%;
     }
     .leftcontent{
         width:768px;
+          padding:0px 0px;
+        width: 100%;
     }
     .rightcontent{
         width: 768px;
+          padding:0px 0px;
+        width: 100%;
     }
 }
 
+@media(max-width:425px){
+    .blogcontent{
+        padding:0px 0px;
+        width: 100%;
+    }
+    .leftcontent{
+      padding:0px 0px;
+    }
+    .rightcontent{
+       padding:0px 0px;
+    }
+    .blogfooter .copyright{
+        display: none;
+    }
+}

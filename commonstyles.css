@@ -7,6 +7,8 @@
 body{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -39,7 +41,7 @@ a{
 .arrow{
     position: absolute;
     top:38px;
-    left:420px;
+    left:402px;
 }
 .menu {
 
@@ -126,19 +128,7 @@ border-right:1px solid rgba(255, 255, 255, 0.2);
     top:100px;
    
    }
-  /* .buttonbg  .homeb{
-    
-   width:60px;
-   height: 30px;
-    
-} */
- /* .pattern-button{
-    
-   width:60px;
-   height: 10px;
-    
-}
-  */
+
   .banner-text .pattern-button{
     width:80px;
     padding:2px 10px;
@@ -151,14 +141,14 @@ border-right:1px solid rgba(255, 255, 255, 0.2);
    
 }
 /* about common styles */
-.whyusbox p{
+.about .abouttext .whyusbox p{
     display: inline-block;
     background-color:rgba(232, 232, 232, 0.5);
     color: black;
     border-left: 3px solid #FFB629;
 
 }
-.aboutheading p{
+.home-about .aboutetext .aboutheading p{
     font-family: 'Rubik',sans-serif;
 font-weight: 600;
 font-style: SemiBold;
@@ -212,7 +202,7 @@ color:rgba(102, 108, 137, 1);}
    
     }
 .teamname p{
-    font-family: Rubik;
+    font-family: 'Rubik',sans-serif;
 font-weight: 500;
 font-style: Medium;
 font-size: 20px;
@@ -222,7 +212,7 @@ letter-spacing: 0%;
  
 }
 .teamjob p{
-    font-family: Krub;
+    font-family: 'Krub',sans-serif;
 font-weight: 500;
 font-style: Medium;
 font-size: 16px;
@@ -244,7 +234,7 @@ letter-spacing: 0%;
     
 } 
 .team-title p{
-    font-family: Rubik;
+    font-family: 'Rubik',sans-serif;
 font-weight: 600;
 font-style: SemiBold;
 font-size: 35px;
@@ -278,21 +268,25 @@ display:inline-block;
 
 }
 
-@media(max-width:768px){
+@media(max-width:1260px){
     .member-grid{
     grid-template-columns: 1fr;
-   
+  }
+  .members{
+    padding:0px;
   }
 }
 /*testimonial section*/
 .testimonial{
     height:auto;
-    width:1000px;
+    overflow-x: hidden;
+    max-width:100%;
      margin:200px;
      display: flex;
      flex-direction: column;
      gap:20px;
 }
+
 .title{
     height:77px;
 }
@@ -313,7 +307,7 @@ border-left: 3px solid #FFB629;
 .title-heading p{
 height: 41px;
 opacity: 1;
-font-family: Rubik;
+font-family: 'Rubik',sans-serif;
 font-weight: 600;
 font-style: SemiBold;
 font-size: 35px;
@@ -340,7 +334,7 @@ gap:500px;
 .user1{
     flex:1;
     background:rgba(244, 244, 244, 1);
-;
+
 }
 .user2{
     flex:1;
@@ -432,16 +426,33 @@ letter-spacing: 0%;
    height: 34px;
     
 }
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .project-grid {
     grid-template-columns: 1fr;
   }
 
   .user {
     flex-direction: column;
-    width:768px;
+    max-width: 100%;
   }
-  
+   .testimonial{
+    flex-direction: column;
+    width: 100%;
+    margin:0px;
+ }
+ .testimonial-title{
+    display: none;
+ }
+ .indexbody .contact .contact-container{
+    overflow-x: hidden;
+    min-width: 100%;
+    padding:0px 0px 0px 0px;
+ }
+ .blog .blog-container{
+     overflow-x: hidden;
+    min-width: 100%;
+ }
+
 }
 /* footer styles */
 footer{
@@ -629,12 +640,27 @@ letter-spacing: 0%;
 .copy1 p{
     color: white;
 }
+@media(max-width:425px){
+    .footer{
+        width: 100%;
+    }
+    .follow{
+    display: none;
+  }
+    .firstsection,.secondsection,.thirdsection{
+        height: 50px;  
+        background-color:rgba(78, 86, 131, 1);  
+    }
+    .secondsection .ssimg{ 
+    width:100px;
+   }
+   .transfitflowcontent p{
+    font-size: 10px;
+    }
+}
 @media(max-width:768px){
-    .footer-content{
-     
-
+    .footer-content{ 
      height: 350px;
-    
      gap:40px;
 
 }
@@ -760,7 +786,7 @@ letter-spacing: 0%;
 
 
 }
-.aboutheadingfaq{
+.aboutheadingfaq {
     font-family: 'Rubik',sans-serif;
 font-weight: 500;
 font-style: Medium;
@@ -819,7 +845,7 @@ color:rgba(102, 108, 137, 1);
    gap: 15px;
   
   position: absolute;
-  right:400px;
+  right:280px;
 }
 @media (max-width:768px) {
     .faq-content{
@@ -887,9 +913,7 @@ color:rgba(102, 108, 137, 1);
     background-color: rgba(9, 18, 66, 1);
     color: white;
   
-
 }
-
 .pricingsubtext p{
     color: black;
     text-indent: 2px;
@@ -969,9 +993,27 @@ text-align: center;
 border-bottom: 1px solid rgba(214, 214, 214, 1);
 
 }
-@media (max-width:768px) {
+
+@media(max-width:1024px){
+    .follow,.faqcontact,.addressbar,.arrow{
+        display: none;
+    }
+
+}
+@media (max-width:1024px) {
     .pricing-grid{
         grid-template-columns: 1fr;
+       
+
     }
     
 }
+@media (max-width:425px) {
+ 
+
+   .faqcontact, header .button,header .addressbar,.arrow{
+    display: none;
+   }    
+}
+
+
